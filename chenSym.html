@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的个人主页</title>
+    <style>
+        :root {
+            --bg: #fafafa;
+            --text: #2d2d2d;
+            --muted: #888;
+            --accent: #333;
+            --border: #e0e0e0;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 2rem;
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .container {
+            text-align: center;
+            max-width: 480px;
+        }
+
+        /* 头像 */
+        .avatar {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            background-color: #e8e8e8;
+            margin: 0 auto 1.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            font-weight: 500;
+            color: #999;
+            user-select: none;
+            overflow: hidden;
+        }
+        .avatar img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* 姓名 */
+        h1 {
+            font-size: 1.6rem;
+            font-weight: 600;
+            letter-spacing: -0.02em;
+            margin-bottom: 0.4rem;
+        }
+
+        /* 简介 */
+        .bio {
+            font-size: 0.95rem;
+            color: var(--muted);
+            margin-bottom: 2rem;
+        }
+
+        /* 分割线 */
+        .divider {
+            width: 40px;
+            height: 1px;
+            background: var(--border);
+            margin: 0 auto 2rem;
+        }
+
+        /* 链接列表 */
+        .links {
+            display: flex;
+            flex-direction: column;
+            gap: 0.6rem;
+            align-items: center;
+        }
+        .links a {
+            display: inline-block;
+            text-decoration: none;
+            color: var(--text);
+            font-size: 0.9rem;
+            padding: 0.45rem 0;
+            border-bottom: 1px solid transparent;
+            transition: border-color 0.2s, color 0.2s;
+        }
+        .links a:hover {
+            border-bottom-color: var(--text);
+            color: #000;
+        }
+
+        /* 页脚 */
+        .footer {
+            margin-top: 2.5rem;
+            font-size: 0.75rem;
+            color: #bbb;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <!-- 头像区域：可以用文字首字母，也可以换成图片 -->
+        <div class="avatar">
+            <!-- 替换为你的头像图片：<img src="avatar.jpg" alt="头像"> -->
+            言
+        </div>
+
+        <!-- 姓名 -->
+        <h1>你的名字</h1>
+
+        <!-- 一句话介绍 -->
+        <p class="bio">写代码，做设计，偶尔写点东西。</p>
+
+        <!-- 分割线 -->
+        <div class="divider"></div>
+
+        <!-- 链接 -->
+        <nav class="links">
+            <a href="https://github.com/你的用户名" target="_blank" rel="noopener">GitHub</a>
+            <a href="https://twitter.com/你的用户名" target="_blank" rel="noopener">Twitter / X</a>
+            <a href="mailto:hello@example.com">邮件联系</a>
+            <a href="#">博客</a>
+        </nav>
+
+        <!-- 页脚 -->
+        <div class="footer">© 2026</div>
+
+    </div>
+</body>
+</html>
